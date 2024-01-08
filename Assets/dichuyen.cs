@@ -84,6 +84,21 @@ public class dichuyen : MonoBehaviour
 
 
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+       
+        if (other.gameObject.tag == "Bullet1")
+        {
+
+            
+
+            
+            Vector2 hitDirection = (rb.transform.position - other.transform.position).normalized;
+
+            rb.AddForce(hitDirection * 0.5f, ForceMode2D.Impulse);
+        }
+
+    }
     IEnumerator IncreaseSpeedCoroutine()
     {
         

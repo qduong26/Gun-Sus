@@ -17,7 +17,7 @@ public class tiepdung : MonoBehaviour
 
 
         GameObject menu = GameObject.Find("Canvas");
-        GameObject menupau = menu.transform.Find("menupause").gameObject;
+        GameObject menupau = menu.transform.Find("pause").gameObject;
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {

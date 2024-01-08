@@ -52,7 +52,7 @@ public class UI : MonoBehaviour
     {
 
         GameObject menu = GameObject.Find("Canvas");
-        GameObject menupau = menu.transform.Find("menupause").gameObject;
+        GameObject menupau = menu.transform.Find("pause").gameObject;
         Time.timeScale = 1f; 
         menupau.SetActive(false);
         isPaused = false;

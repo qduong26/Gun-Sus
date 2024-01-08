@@ -10,8 +10,8 @@ public class Maupl : MonoBehaviour
     public int maxHealth = 1000;
     public int currentHealth;
     private Vector3 startPosition;
-    public slidermau thanhmau;
-    public Transform vt;
+   
+    
     public TextMeshProUGUI kq;
     public TextMeshProUGUI mau;
     public int healthIncreaseAmount = 50;
@@ -22,8 +22,7 @@ public class Maupl : MonoBehaviour
         
         currentHealth = maxHealth;
         startPosition = transform.position;
-        thanhmau.setmaxmau(maxHealth);
-        thanhmau.setmau(currentHealth);
+       
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -52,7 +51,7 @@ public class Maupl : MonoBehaviour
         }
         else
         {
-            thanhmau.setmau(currentHealth);
+            
         }
     }
 

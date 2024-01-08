@@ -18,10 +18,10 @@ public class cham : MonoBehaviour
             }
 
 
-            /* Rigidbody2D rb = GetComponent<Rigidbody2D>();
-            Vector3 hitDirection = (transform.position - other.transform.position).normalized;
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            Vector2 hitDirection = (transform.position - other.transform.position).normalized;
             rb.AddForce(hitDirection * hitForce, ForceMode2D.Impulse);
-            */
+            Destroy(other.gameObject);  
 
             
             
